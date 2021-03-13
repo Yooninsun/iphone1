@@ -3,550 +3,438 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta property="og:title" content="웹퍼블리셔 윤인선 폴트폴리오">
-	<meta property="og:description" content="웹퍼블리셔 윤인선의 Responsive Web 폴트폴리오입니다" />
-	<meta property="og:image" content="https://yooninsun.github.io/hotel1/img/open_graph.jpg" />
+	<meta property="og:description" content="웹퍼블리셔 윤인선의 PC Web 폴트폴리오입니다" />
+	<meta property="og:image" content="https://yooninsun.github.io/hotel1/images/pop.jpg" />
 	<meta property="og:image:width" content="1000">
 	<meta property="og:image:height" content="525">
 	<meta property="og:site_name" content="EEN SUN YOON">
 	<meta property="og:url" content="https://yooninsun.github.io/hotel1/"/>
+  
+  <title>포트폴리오 첫번째 - PC Web</title>
+  
+  
+  <link rel="shortcut icon" href="images/LH-favicon.ico">
 
-  <title>포트폴리오 세번째 - Responsive Web</title>
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="images/LH-favicon.png"> 
+	<link rel="icon" type="image/png" sizes="192x192" href="images/LH-favicon.png">
 
-  <link rel="shortcut icon" href="img/apple.ico">
 
-	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/apple.png"> 
-	<link rel="icon" type="image/png" sizes="192x192" href="img/apple.png">
-
+  <link rel="stylesheet" href="css/reset.css">
   <!-- UI콘 CSS -->
   <link rel="stylesheet" href="css/webfont.css">
-  <!-- 폰트어썸 CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- 스와이퍼 CSS -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="css/aos.css">
-  
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/rwd.css">
-
-  <!-- js 파일 -->
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous">
+  </script>
+  <!-- 매직스크롤 CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <!-- 트윈맥스 CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <!-- Swiper JS -->
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/custome.js"></script>
-
 </head>
 <body>
   <header>
     <div class="header_wrap">
-      <div class="header inner clear">
-        <h1 class="logo">
-          <a href="index.html"><img src="img/apple_logo.png" alt="애플로고 이미지"></a>
-        </h1>
-
-        <div class="gnb">
-          <ul class="clear">
-            <li class="selected"><a href="#">MAC</a></li>
-            <li><a href="#">iPad</a></li>
-            <li><a href="#">iPhone</a></li>
-            <li><a href="#">Watch</a></li>
-            <li><a href="#">고객지원</a></li>
-          </ul>
+      <div class="bg"></div>
+      <div class="selcet_bg"></div>
+      <div class="inner">
+        <div id="header" class="clear">
+          <h1 class="logo_area">
+            <a href="index.html"><img src="./images/header_logo.png" alt="로고이미지"></a>
+          </h1>
+          <nav class="gnb_wrap">
+            <div class="gnb_wrapper">
+              <div class="particle"></div>
+              <ul class="gnb">
+                <li>
+                  <a href="#">시그니엘 서울 소개</a>
+                  <ul class="depth1">
+                    <li><a href="#">시그니엘 서울 소개</a></li>
+                    <li><a href="#">시그니엘 서울 위치</a></li>
+                    <li><a href="#">주요 명소</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">갤러리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">객실 안내</a>
+                  <ul class="depth1">
+                    <li><a href="#">그랜드 디럭스 룸</a></li>
+                    <li><a href="#">프리미어 룸</a></li>
+                    <!-- <li><a href="#">시그니엘 프리미어 룸</a></li> -->
+                    <li><a href="#">디럭스 스위트 룸</a></li>
+                    <li><a href="#">프리미어 스위트 룸</a></li>
+                    <li><a href="#">코리안 스위트 룸</a></li>
+                    <!-- <li><a href="#">프레지덴셜 스위트 룸</a></li> -->
+                    <li><a href="#">로얄 스위트 룸</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">부대시설</a>
+                  <ul class="depth1">
+                    <li><a href="#">에비앙 스파</a></li>
+                    <li><a href="#">호텔 사우나</a></li>
+                    <li><a href="#">피트니스 센터</a></li>
+                    <li><a href="#">호텔 수영장</a></li>
+                    <li><a href="#">IR 자료</a></li>
+                    <li><a href="#">살롱 드 시그니엘</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">다이닝</a>
+                  <ul class="depth1">
+                    <li><a href="#">모던 레스토랑</a></li>
+                    <li><a href="#">SIGNIEL CLUB</a></li>
+                    <li><a href="#">Pastry Salon</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">웨딩&연회</a>
+                  <ul class="depth1">
+                    <li><a href="#">호텔 웨딩</a></li>
+                    <li><a href="#">호텔 컨벤션</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="user_menu">
+            <div class="select_box">
+              <a class="" href="javascript:;">KR</a>
+              <ul class="list">
+                <li><a href="javascript:;">EN</a></li>
+                <li><a href="javascript:;">CN</a></li>
+                <li><a href="javascript:;">JP</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="menu_btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <div class="menu">
-          <div class="obj_circle circle01"></div>
-          <div class="obj_circle circle02"></div>
-          <div class="obj_circle circle03"></div>
-          <ul>
-            <li><a href="#">MAC</a></li>
-            <li><a href="#">iPad</a></li>
-            <li><a href="#">iPhone</a></li>
-            <li><a href="#">Watch</a></li>
-            <li><a href="#">고객지원</a></li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </header>
-
   <main>
-    <div class="main_vis_wrap">
-      <div class="main_vis">
-        <video autoplay="" loop="" muted="">
-          <source src="img/main_vis_new.webm" type="video/mp4"> 
-        </video>
-        <div class="txt_box">
-          <div class="tit_box">
-            The <span>ultimate 5G</span><br />
-            iPhone12
-          </div>
-          <div class="btn_box">
-            <a href="#">Buy</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="gallery_wrap">
-      <div class="gallery inner">
-        <div class="txt_wrap center clear">
-          <h2 class="main_tit">
-            소중한 순간들을,<br /> 놓치지 말고 담으세요
-          </h2>
-          <p class="desc">
-            밤이든 낮이든 빛과 장소에 구애 받지 않고,<br />
-            소중한 당신의 모든 순간들을 한순간도 놓치지말고 추억으로 저장하세요.
-          </p>
-        </div>
-        <div class="clear">
-          <div class="left_area">
-            <div class="wrap">
-              <div class="txt_wrap m_none">
-                <h3 class="tit">
-                  거부할 수 없는<br /> 인물 사진의 우월함
-                </h3>
-                <p class="desc">
-                  눈을 사로잡는 인물 사진 모드 피사체가 더욱 돋보일 수 있도록,<br>
-                  배경을 보다 예술적을 블러 처리해주는 인물 사진 모드가 더욱<br> 좋아졌습니다. 정말 근사하지 않나요?
-                </p>
-              </div>
-              <div class="img_wrap img02">
-                <img src="./img/gallery_01.jpg" alt="">
-              </div>
-              
-            </div>
-            <div class="img_wrap img03">
-              <img src="./img/gallery_03.jpg" alt="">
-            </div>
-          </div>
-          <div class="right_area">
-            <div class="img_wrap img01">
-              <img src="./img/gallery_02.jpg" alt="">
-            </div>
+    <article id="main">
+      <section id="sec1">
+        <div class="full_video">
+          <video poster="./images/main_video.jpg" muted playsinline autoplay loop>
+            <source src="./images/main_video.mp4" type="video/mp4"> 
+          </video>
             <div class="txt_wrap">
-              <h3 class="tit">
-                조명에 따라 다양한<br> 분위기 연출.
-              </h3>
-              <p class="desc">
-                사진에 새로운 차원의 아름다움을 더하는 법.<br>
-                '하이키 조명 모노','자연 조명','스튜디오 조명'을<br>
-                비롯한 6가지 조명 효과 중에서 하나를 선택해<br>
-                사진에 적용해보세요.
-              </p>
+              <p class="upside">A MEMBER OF</p>
+              <h2>THE LEADING HOTELS</h2>
+              <p class="downside">OF THE WORLD</p>
             </div>
-            <div class="img_wrap img04">
-              <img src="./img/gallery_04.jpg" alt="" >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper">
-      <div class="txt_wrap center">
-        <h2 class="tit">
-          <span>Big News</spn><br />스피드 그 이상의 스피드.
-        </h2>
-        <p class="desc">
-          5G 스피드. 스마트폰 사상 가장 빠른 A14 Bionic 칩.<br>
-          전면 화면 OLED 디스플레이. 4배 나은 낙하 성능을 선사하는<br>
-          Ceramic Shield. 그리고 모든 카메라에서 지원되는 ‘야간 모드’까지.<br>
-          이 모든 것을 담은 iPhone 12, 두 가지 완벽한 사이즈로 만날 수 있습니다.
-        </p>
-      </div>
-      <div class="swiper-container play_slide">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide01">
-            <img src="img/slide_img_01.jpg" alt="">
-            <a href="javascript:;" data-src="tInQ68VgKjY" class="play"><img src="img/swiper_play_circle.svg" alt=""></a>
-
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/tInQ68VgKjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="close"><i class="fi-rr-cross"></i></div> -->
-            
-          </div>
-          <div class="swiper-slide slide02">
-            <img src="img/slide_img_02.jpg" alt="">
-            <a href="javascript:;" data-src="zlRToK3OQUo"  class="play"><img src="img/swiper_play_circle.svg" alt=""></a>
-          </div>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-
-    <div class="banner_wrap">
-      <div class="banner">
-        <div class="bg_box">
-          <img src="img/banner_bg.jpg" alt="">
-        </div>
-        <div class="txt_box">
-          <h3 class="tit">
-            Find a payment plan<br /> that works for you.
-          </h3>
-          <div class="btn">
-            <a href="#">See options</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about_battery">
-      <h2 class="tit">
-        12 Pro Max.<br /> 켰노라 찍었노라 압도했노라 
-      </h2>
-      <div class="img_wrap">
-        <img src="img/battery_page_img.jpg" alt="">
         <ul class="clear">
           <li>
-            <h4 class="tit">
-              밤에 피어나는 <br> 인물 사진.
-            </h4>
-            <p class="desc">
-              <strong>야간 모드 인물 사진</strong>와이드 카메라에서는 불 켜진 건물, 가로등, 그 밖에 배경에 아주 적은 양의 빛만 있다면 강렬한 색감과 아름다운 보케 효과가 살아있는 야간 모드 인물 사진을 촬영할 수 있습니다.
-            </p>
+            <a href="#">
+              <img src="./images/sec01_li01.jpg" alt="">
+              <h3>Grand Deluxe Room</h3>
+              <div class="more_btn">
+                <a href="#">자세히 보기</a>
+              </div>
+            </a>
           </li>
           <li>
-            <h4 class="tit">
-              디테일한 것까지<br>제어하는 창작의 자유.
-            </h4>
-            <p class="desc">
-              ProRAW는 Apple 이미지 파이프라인 데이터를 포함한 모든 표준 RAW 정보를 제공합니다. 덕분에 노이즈 감소 및 멀티프레임 노출 조절 효과가 이미 적용된 상태에서 사진을 편집할 수 있죠. 그리고 여기서 아낀 시간을 컬러 및 화이트 밸런스 조절에 넉넉하게 들일 수 있답니다.
-            </p>
+            <a href="#">
+              <img src="./images/sec01_li02.jpg" alt="">
+              <h3>Premier Room</h3>
+              <div class="more_btn">
+                <a href="#">자세히 보기</a>
+              </div>
+            </a>
           </li>
           <li>
-            <h4 class="tit">
-              60배 더 많은 색상.<br />무한대의 감동.
-            </h4>
-            <p class="desc">
-              8비트 HDR에서 10비트 HDR로 비약적으로 향상된 iPhone 12 Pro 동영상 카메라 성능. 무려 7억 가지의 색상을 담아내기 때문에 훨씬 더 생동감 넘치는 동영상을 촬영할 수 있죠. 여기서 그치지 않고, 영화 스튜디오에서 사용하는 포맷인 Dolby Vision 방식의 촬영까지 지원합니다. 심지어 Dolby Vision 동영상을 편집한 뒤, AirPlay를 활용해 더 큰 화면에서 가장 세밀한 디테일 하나까지 확인할 수 있죠.
-            </p>
+            <a href="#">
+              <img src="./images/sec01_li03.jpg" alt="">
+              <h3>Signiel Premier Room</h3>
+              <div class="more_btn">
+                <a href="#">자세히 보기</a>
+              </div>
+            </a>
           </li>
-  
+          <li>
+            <a href="#">
+              <img src="./images/sec01_li04.jpg" alt="">
+              <h3>Royal Suite Room</h3>
+              <div class="more_btn">
+                <a href="#">자세히 보기</a>
+              </div>
+            </a>
+          </li>
         </ul>
-      </div>
-      
-    </div>
-
-    <div class="about_security clear">
-      <div class="img_wrap left">
-        <img src="img/security_img.jpg" alt="">
-      </div>
-      <div class="txt_wrap left">
-        <div class="txt_inner">
-          <h2 class="main_tit">
-            매일같이 쓰는 앱이기에,<br>
-            개인 정보 보호를 최우선으로.
-          </h2>
-  
-          <h4 class="tit">
-            Safari.는 인터넷에 광고들로부터 개인정보 추적은 얼씬도 못하게 합니다.
-          </h4>
-          <p class="info">
-            '지능형 추적 방지'기능은 방문하는 사이트 마다 당신을 따라다니는 각종 광고주를 막는데 도움을 줍니다.
-          </p>
-          <h4 class="tit">
-            지도 앱에겐 당신의 지난 위치 기록은 그저 지나간 이야기일 뿐
-          </h4>
-          <p class="info">
-            '지도'앱은 당신의 데이터를 당신의 Apple ID와 연관 짓지 앟으며, Apple은 당신의 지난 위치 기록을 보관하지 않습니다.
-          </p>
-          <h4 class="tit">
-            사진 앱. 당신의 소중한 추억을 소중하게 보호합니다.
-          </h4>
-          <p class="info">
-            '사진'앱은 외부 클라우드를 거치짖 않고도 당신의 기기안에서만 사진이 분류될 수 있도록, 머신 런니을 활용합니다. 덕분에 당신의 사진이 Apple은 물론 그 누구와도 공유될 일은 없죠.
-          </p>
-          <!-- <div class="more_btn">
-            <a href>Learn more</a>
-          </div> -->
-          <h4 class="tit">
-            메시지 앱. 그 안에서 이뤄지는 대화는 오로지 당신과 상대만의 것.
-          </h4>
-          <p class="info">
-            당신이 '메시지'앱을 통해 상대와 대화를 주고받는 동안, Apple은 기기 간 전송 중인 내용을 읽을 수 없습니다.
-          </p>
+      </section>
+      <section id="sec2">
+        <div class="banner01_wrap">
+          <div class="banner">
+            <p class="txt01">SIGNIEL <span>HOTEL</span> SIGNIEL <span> HOTEL &nbsp;</span></p>
+           <p class="txt02">HOTEL <span>SIGNIEL</span> HOTEL <span>SIGNIEL &nbsp;</span></p>
+          </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="product_wrap clear">
-      <div class="product">
-        <h2 class="tit center">
-          당신에게 알맞는<br /> iPhone은?? 
-        </h2>
-        <ul class="clear">
-          <li class="left">
-            <div class="product_model">
-              <img src="img/mobile_img_01.jpg" alt="">
-              <p class="model_name">
-                iPhone 12 Pro
-              </p>
-              <span class="price">
-                ₩1,350,000부터
-              </span>
-              <div class="color">
-                <div class="circle gray"></div>
-                <div class="circle black"></div>
-              </div>
-              <div class="more_btn"><a href="javascript:;">제품 정보 더보기<i class="fas fa-caret-down"></i></a>
-              </div>
-            </div>
-            <div class="porduct_info">
-              <p class="strong">
-                Network
-              </p>
-              <span>
-                5G<sup>1</sup>
-              </span>
-              <p class="strong">
-                Water Resistant<sup>2</sup>
-              </p>
-              <img src="img/product_ico_checked.svg" alt="">
-              <p class="strong">
-                Wireless Charging<sup>3</sup> &nbsp;Battery
-              </p>
-              <img src="img/product_ico_checked.svg" alt="">
-              <span>4080 mAh<sup>18</sup>
-              </span>
-              <p class="strong">
-                Memory & Storage
-              </p>
-              <span>
-                8 GB RAM<br />
-                128 GB Storage<sup>19</sup>
-              </span>
-              <p class="strong">
-                Display
-              </p>
-              <span>
-                6.0" Full HD+ OLED<br />
-                Smooth Display<sup>20</sup>
-              </span>  
-              <p class="strong">
-                Rear Camera(s)
-              </p>
-              <span>
-                12 MP dual-pixel & 16 MP ultrawide
-              </span>  
-            </div>
-          </li>
-          <li class="left">
-            <div class="product_model">
-              <img src="img/mobile_img_02.jpg" alt="">
-              <p class="model_name">
-                iPhone 12
-              </p>
-              <span class="price">
-                ₩950,000부터
-              </span>
-              <div class="color">
-                <div class="circle white"></div>
-                <div class="circle black"></div>
-              </div>
-              <div class="more_btn"><a href="javascript:;">제품 정보 더보기<i class="fas fa-caret-down"></i></a>
-              </div>
-            </div>
-            <div class="porduct_info">
-              <p class="strong">
-                Network
-              </p>
-              <span>
-                5G<sup>1</sup>
-              </span>
-              <p class="strong">
-                Water Resistant
-              </p>
-              <img src="img/product_ico_no_checked.svg" alt="">
-              <p class="strong">
-                Wireless Charging & Battery
-              </p>
-              <img src="img/product_ico_no_checked.svg" alt="">
-              <span>3885 mAh<sup>18</sup>
-              </span>
-              <p class="strong">
-                Memory & Storage
-              </p>
-              <span>
-                6 GB RAM<br />
-                128 GB Storage<sup>19</sup>
-              </span>
-              <p class="strong">
-                Display
-              </p>
-              <span>
-                6.0" Full HD+ OLED
-              </span>  
-              <p class="strong">
-                Rear Camera(s)
-              </p>
-              <span>
-                12 MP dual-pixel & 16 MP ultrawide
-              </span>  
-            </div>
-          </li>
-          <li class="left">
-            <div class="product_model">
-              <img src="img/mobile_img_03.jpg" alt="">
-              <p class="model_name">
-                iPhone 11
-              </p>
-              <span class="price">
-                ₩850,000부터
-              </span>
-              <div class="color">
-                <div class="circle black"></div>
-              </div>
-              <div class="more_btn"><a href="javascript:;">제품 정보 더보기<i class="fas fa-caret-down"></i></a>
-              </div>
-            </div>
-            <div class="porduct_info">
-              <p class="strong">
-                Network
-              </p>
-              <span>
-                4G
-              </span>
-              <p class="strong">
-                Water Resistant
-              </p>
-              <img src="img/product_ico_no_checked.svg" alt="">
-              <p class="strong">
-                Wireless Charging & Battery
-              </p>
-              <img src="img/product_ico_no_checked.svg" alt="">
-              <span>3140 mAh<sup>18</sup>
-              </span>
-              <p class="strong">
-                Memory & Storage
-              </p>
-              <span>
-                6 GB RAM<br />
-                128 GB Storage<sup>19</sup>
-              </span>
-              <p class="strong">
-                Display
-              </p>
-              <span>
-                5.8" Full HD+ OLED
-              </span>  
-              <p class="strong">
-                Rear Camera(s)
-              </p>
-              <span>
-                12 MP dual-pixel
-              </span>  
-            </div>
-          </li>
-        </ul>
-        <div class="btn clear">
+      </section>
+      <section id="sec3">
+        <div class="img_wrap"><img src="./images/sec04_img01.jpg" alt=""></div>
+        <div class="request">
           <a href="#">
-            Compare all
+            <h4>도심 속 랜드마크 호텔</h4>
+            <h3>파노라믹한 스카이라인과 야경조망</h3><br />
+            <span>오직 시그니엘에서만</span>
           </a>
         </div>
-      </div>
-    </div>
+      </section>
+      <section id="sec4">
+        <h2 class="tit">Signiel Dining</h2>
+        <p class="desc">탁트인 도심의 전경을 바라보며 세계 최고 수준의 셰프들이 직접 선보이는 다양한 요리를 즐기실 수 있습니다.</p>
+        <div class="swiper-container sec4_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide01">
+                <div class="box">
+                  <div class="img_wrap">
+                    <img src="images/slide01.jpg" alt="">
+                    <div class="img_tit">
+                      <p>레스토랑</p>
+                      <p>스테이,모던 레스토랑</p>
+                      <p>타입 <strong>프렌치</strong><span></span>위치 <strong>81층</strong></p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide slide02">
+                <div class="box">
+                  <div class="img_wrap">
+                    <img src="images/slide02.jpg" alt="">
+                    <div class="img_tit">
+                      <p>레스토랑</p>
+                      <p>비채나</p>
+                      <p>타입 <strong>한식</strong><span></span>위치<strong>81층</strong></p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide slide03">
+                <div class="box">
+                  <div class="img_wrap">
+                    <img src="images/slide03.jpg" alt="">
+                    <div class="img_tit">
+                      <p>멤버스 레스토랑</p>
+                      <p>SIGNIEL CLUB</p>
+                      <p>타입 <strong>멤버스 레스토랑</strong><span></span>위치 <strong>107층</strong></p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide slide04">
+                <div class="box">
+                  <div class="img_wrap">
+                    <img src="images/slide04.jpg" alt="">
+                    <div class="img_tit">
+                      <p>바 & 라운지</p>
+                      <p>더 라운지</p>
+                      <p>타입 <strong>라운지</strong><span></span>위치 <strong>79층</strong></p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide slide05">
+                <div class="box">
+                  <div class="img_wrap">
+                    <img src="images/slide05.jpg" alt="">
+                    <div class="img_tit">
+                      <p>바 & 라운지</p>
+                      <p>바81</p>
+                      <p>타입 <strong>바</strong><span></span>위치 <strong>81층</strong></p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="swiper-slide slide06">
+                <div class="box">
+                  <div class="img_wrap">
+                    <img src="images/slide06.jpg" alt="">
+                    <div class="img_tit">
+                      <p>베이커리</p>
+                      <p>Pastry Salon</p>
+                      <p>타입 <strong>베이커리</strong><span></span>위치 <strong>79층</strong></p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
 
-    <div class="accessory_wrap">
-      <div class="accessirt">
-        <h2 class="tit center">
-          추천 iPhone 액세서리
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section id="sec5">
+        <h2>
+          Connect With<br />
+          #Signielhotels
         </h2>
-        <ul  class="clear">
-          <li class="left">
-            <a href="#">
-              <div class="img_box img01"></div>
-              <p>MagSafe형 가죽 케이스 </p>
-              <p>₩75,000</p>
-              <div class="circle_box">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="cursor_wrap"></div>
+        <div class="cursor_02">
+
+        </div>
+        <ul class="clear">
+          <li>
+            <div class="img_wrap">
+              <img src="images/sec05_img01.jpg" alt="">
+              <div class="cover">
+                <div>
+                  <p>
+                    시그니엘 서울의 시그니처,<br> 롤스로이스 서비스와 프라이빗<br> 버틀러를 동시에 누려보세요.
+                  </p>
+                  <a class="more_btn" href="a">자세히보기</a>
+                </div>
               </div>
-            </a>
+            </div>
+            <p>Perfect Celebration</p>
           </li>
-          <li class="left">
-            <a href="#">
-              <div class="img_box img02"></div>
-              <p>AirPods 무선 충전 케이스 모델</p>
-              <p>₩249,000</p>
-            </a>
-          </li>
-          <li class="left">
-            <a href="#">
-              <div class="img_box img03"></div>
-              <p>MagSafe형 가죽 카드지갑</p>
-              <p>₩75,000</p>
-              <div class="circle_box">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+          <li>
+            <div class="img_wrap">
+              <img src="images/sec05_img02.jpg" alt="">
+              <div class="cover">
+                <div>
+                  <p>
+                    장미빛 샴페인과 함께 프로포즈,<br> 결혼 기념일 등 각종 기념일을<br> 오래도록 기억될 수 있는 추억을<br> 만들어보세요.
+                  </p>
+                  <a class="more_btn" href="a">자세히보기</a>
+                </div>
               </div>
-            </a>
+            </div>
+            <p>Sweet Moment</p>
           </li>
-          <li class="left">
-            <a href="#">
-              <div class="img_box img04"></div>
-              <p>MagSafe Duo 충전기</p>
-              <p>₩179,000</p>
-            </a>
+          <li>
+            <div class="img_wrap">
+                <img src="images/sec05_img03.jpg" alt="">
+                <div class="cover">
+                  <div>
+                    <p>
+                      미쉐린 3스타 셰프, 야닉 알레노가 제안하는 애프터눈 티 세트,<br> Le Gouter SIGNIEL과 함께<br> 여유로운 오후를 보내보세요.
+                    </p>
+                    <a class="more_btn" href="a">자세히보기</a>
+                  </div>
+                </div>
+            </div>
+            <p>Delightful Celebration</p>
           </li>
-          <li class="left">
-            <a href="#">
-              <div class="img_box img05"></div>
-              <p>MagSafe형 가죽 슬리브</p>
-              <p>₩179,000</p>
-              <div class="circle_box">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+          <li>
+            <div class="img_wrap">
+              <img src="images/sec05_img04.jpg" alt="">
+              <div class="cover">
+                <div>
+                  <p>
+                    시그니엘서울<br> Executive Pastry Chef인<br> Maxime Maniez가 선보이는<br> 케이크로 소중한 날을 함께하세요.
+                  </p>
+                  <a class="more_btn" href="a">자세히보기</a>
+                </div>
               </div>
-            </a>
+            </div>
+            <p>Perfect Celebration</p>
           </li>
         </ul>
-      </div>
-    </div>
-  </main>
 
+
+      </section>
+      <section id="sec6">
+        <p class="tit">Propose Event</p>
+        <ul>
+          <li>
+            <span class="under"><i></i>시그니엘에서</span>
+            <img src="./images/pp.jpg" alt=""><sapn class="txt"></sapn><sapn class="txt">준비한</sapn>
+          </li>
+          <li>
+            <sapn class="txt">특별한</sapn>
+            <img src="./images/pp2.jpg" alt="">
+            <span class="under"><i></i>이벤트로</span>
+          </li>
+          <li>
+            <span class="under"><i></i>사랑하는 연인에게</span>
+            <sapn class="txt">잊지못할</sapn><img src="images/pp4.jpg" alt="">
+          </li>
+          <li>
+            <img src="images/pp3.jpg" alt=""><sapn class="txt">소중한 </sapn><span class="under"><i></i>추억을 선물 하세요</span>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
   <footer>
-    <div class="footer">
-      <div class="footer_top">
-        <div class="sns_box">
-          <ul class="clear">
-            <li class="left"><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li class="left"><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li class="left"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li class="left"><a href="#"><i class="fab fa-youtube"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <address>
-        <span>사업자등록번호 : 120-81-84429 </span>
-        <span>통신판매업신고번호 : 제 2011-서울강남-00810호 </span>
-        <span>대표이사 : PETER DENWOOD </span>
-        <span>주소 : 서울 특별시 강남구 영동대로 517 </span>
-        <span>대표전화 : 02-6712-6700 |</span>
-        <span>팩스 : 02-6928-0000</span>
-      </address>
-      <div class="copy center">
-        Copyright © 2021 Apple Inc.
-      </div>
+    <div id="footer">
+          <div class="main_footer">
+            <div class="footer_inner clear">
+              <div class="footer_box">
+                <h3>CUSTOMER CENTER</h3>
+                <ul>
+                  <li><strong>객실예약</strong><a href="tel:(+82)1052508954"><span>(+82)1052508954</span></a></li>
+                  <li><strong>Tel</strong><a href="tel:1588-1234"><span>1588-1234</span></a></li>
+                  <li><strong>Fax</strong><a href="tel:012-123-456"><span>012-123-456</span></a></li>
+                  <li><strong>E-mail</strong><a href="mailto:jein8954@naver.com">jein8954@naver.com</a></li>
+                </ul>
+              </div>
+              <div class="footer_box e_service">
+                <h3>E-CONCIERGE SERVICE</h3>
+                <p>롯데 시그니엘을 더욱 편리하게 이용할 수 있는 컨시어지앱</p>
+                <a href="#"><img src="./images/footer_eservice_apple.jpg" alt="애플 ios용 QR코드"></a>
+                <a href="#"><img src="./images/footer_eservice_android.jpg" alt="안드로이드용 QR코드"></a>
+              </div>
+              <div class="sns_box">
+                <div class="family_site">
+                  <ul class="list">
+                    <li><a href="javascript:void(0):">시그니엘 레지던스</a></li>
+                    <li><a href="javascript:void(0):">롯데월드타워</a></li>
+                    <li><a href="javascript:void(0):">롯데월드몰</a></li>
+                    <li><a href="javascript:void(0):">롯데에비뉴엘</a></li>
+                  </ul>
+                  <a class="family_btn" href="javascript:;">Family site</a>
+                </div>
+                <div class="sns">
+                  <strong>SNS</strong>
+                  <a href="#" class="sns1"><img src="./images/footer_sns_facebook.png" alt="페이스북"></a>
+                  <a href="#" class="sns2"><img src="./images/footer_sns_insta.png" alt="인스타그램"></a>
+                  <a href="#" class="sns3"><img src="./images/footer_sns_blog.png" alt="블로그"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_inner">
+            <address>
+              <ul class="clear">
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#"><strong>개인정보 처리 방침</strong></a></li>
+                <li><a href="#">영상정보처리기기 운영,관리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">채용안내</a></li>
+              </ul>
+              <div class="address_box">
+                <p class="address">㈜호텔 롯데 서울특별시 송파구 올림픽로 300 롯데월드타워 76-101층/ 02-3213<br>
+                  대표 이사 김현식 사업자등록 번호 104-81-25980 <br>
+                  통신판매신고번호 중구02802호
+                </p>
+                <p class="copy">
+                  Tel. 1833-8855, E-mail : p-city@paradian.com, Copyright &copy; LOTTE SIGNIEL Co. Ltd. All rights reserved.
+                </p>
+              </div>
+            </address>
+          </div>
     </div>
+
   </footer>
 </body>
 </html>
